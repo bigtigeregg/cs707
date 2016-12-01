@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		BE02241A1DC5309A00E2E4A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0224191DC5309A00E2E4A8 /* AppDelegate.swift */; };
-		BE02241C1DC5309A00E2E4A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE02241B1DC5309A00E2E4A8 /* ViewController.swift */; };
 		BE02241F1DC5309A00E2E4A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE02241D1DC5309A00E2E4A8 /* Main.storyboard */; };
 		BE0224221DC5309A00E2E4A8 /* cs707p1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE0224201DC5309A00E2E4A8 /* cs707p1.xcdatamodeld */; };
 		BE0224241DC5309B00E2E4A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0224231DC5309B00E2E4A8 /* Assets.xcassets */; };
 		BE0224271DC5309B00E2E4A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0224251DC5309B00E2E4A8 /* LaunchScreen.storyboard */; };
+		BE3205881DF0CFC300D8D8EE /* tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3205871DF0CFC300D8D8EE /* tab1ViewController.swift */; };
+		BE32058A1DF0D14C00D8D8EE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3205891DF0D14C00D8D8EE /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE0224161DC5309A00E2E4A8 /* cs707p1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cs707p1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0224191DC5309A00E2E4A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE02241B1DC5309A00E2E4A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE02241E1DC5309A00E2E4A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE0224211DC5309A00E2E4A8 /* cs707p1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cs707p1.xcdatamodel; sourceTree = "<group>"; };
 		BE0224231DC5309B00E2E4A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE0224261DC5309B00E2E4A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0224281DC5309B00E2E4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE3205871DF0CFC300D8D8EE /* tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tab1ViewController.swift; sourceTree = "<group>"; };
+		BE3205891DF0D14C00D8D8EE /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				BE0224191DC5309A00E2E4A8 /* AppDelegate.swift */,
-				BE02241B1DC5309A00E2E4A8 /* ViewController.swift */,
 				BE02241D1DC5309A00E2E4A8 /* Main.storyboard */,
+				BE3205891DF0D14C00D8D8EE /* WebViewController.swift */,
 				BE0224231DC5309B00E2E4A8 /* Assets.xcassets */,
 				BE0224251DC5309B00E2E4A8 /* LaunchScreen.storyboard */,
 				BE0224281DC5309B00E2E4A8 /* Info.plist */,
 				BE0224201DC5309A00E2E4A8 /* cs707p1.xcdatamodeld */,
+				BE3205871DF0CFC300D8D8EE /* tab1ViewController.swift */,
 			);
 			path = cs707p1;
 			sourceTree = "<group>";
@@ -140,8 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0224221DC5309A00E2E4A8 /* cs707p1.xcdatamodeld in Sources */,
-				BE02241C1DC5309A00E2E4A8 /* ViewController.swift in Sources */,
 				BE02241A1DC5309A00E2E4A8 /* AppDelegate.swift in Sources */,
+				BE3205881DF0CFC300D8D8EE /* tab1ViewController.swift in Sources */,
+				BE32058A1DF0D14C00D8D8EE /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,7 @@
 				BE02242D1DC5309B00E2E4A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
