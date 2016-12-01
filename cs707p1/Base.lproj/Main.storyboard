@@ -44,6 +44,40 @@
             </objects>
             <point key="canvasLocation" x="1252" y="263.11844077961024"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="S4E-nW-mYF">
+            <objects>
+                <viewController id="NyL-Z2-Zfb" customClass="streamwebViewController" customModule="cs707p1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DmF-aQ-S6X"/>
+                        <viewControllerLayoutGuide type="bottom" id="7yn-WP-fqa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VLU-MT-7pC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thE-6m-B28">
+                                <rect key="frame" x="16" y="28" width="343" height="582"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="thE-6m-B28" firstAttribute="top" secondItem="DmF-aQ-S6X" secondAttribute="bottom" constant="8" symbolic="YES" id="Jcc-jd-QTc"/>
+                            <constraint firstItem="7yn-WP-fqa" firstAttribute="top" secondItem="thE-6m-B28" secondAttribute="bottom" constant="8" symbolic="YES" id="SSm-mB-fkd"/>
+                            <constraint firstItem="thE-6m-B28" firstAttribute="leading" secondItem="VLU-MT-7pC" secondAttribute="leadingMargin" id="VmW-Te-KAl"/>
+                            <constraint firstItem="thE-6m-B28" firstAttribute="trailing" secondItem="VLU-MT-7pC" secondAttribute="trailingMargin" id="ZI5-JQ-Ose"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="byk-JM-bbb"/>
+                    <connections>
+                        <outlet property="streamWebView" destination="thE-6m-B28" id="8Nl-Lo-Fmx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nlu-4e-GXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="781.60000000000002" y="937.78110944527748"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="D4v-jO-IVb">
             <objects>
@@ -114,6 +148,7 @@
                     <connections>
                         <segue destination="al9-Nq-VyP" kind="relationship" relationship="viewControllers" id="lVQ-gf-jri"/>
                         <segue destination="fLm-uE-pEI" kind="relationship" relationship="viewControllers" id="txr-UC-KL9"/>
+                        <segue destination="NyL-Z2-Zfb" kind="relationship" relationship="viewControllers" id="OPk-Gb-ept"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14M-hT-9og" userLabel="First Responder" sceneMemberID="firstResponder"/>

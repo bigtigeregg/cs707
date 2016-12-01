@@ -14,6 +14,7 @@
 		BE0224271DC5309B00E2E4A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0224251DC5309B00E2E4A8 /* LaunchScreen.storyboard */; };
 		BE3205881DF0CFC300D8D8EE /* tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3205871DF0CFC300D8D8EE /* tab1ViewController.swift */; };
 		BE32058A1DF0D14C00D8D8EE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3205891DF0D14C00D8D8EE /* WebViewController.swift */; };
+		BE32058C1DF0D9BB00D8D8EE /* streamwebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32058B1DF0D9BB00D8D8EE /* streamwebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BE0224281DC5309B00E2E4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE3205871DF0CFC300D8D8EE /* tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tab1ViewController.swift; sourceTree = "<group>"; };
 		BE3205891DF0D14C00D8D8EE /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BE32058B1DF0D9BB00D8D8EE /* streamwebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = streamwebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BE0224281DC5309B00E2E4A8 /* Info.plist */,
 				BE0224201DC5309A00E2E4A8 /* cs707p1.xcdatamodeld */,
 				BE3205871DF0CFC300D8D8EE /* tab1ViewController.swift */,
+				BE32058B1DF0D9BB00D8D8EE /* streamwebViewController.swift */,
 			);
 			path = cs707p1;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE32058C1DF0D9BB00D8D8EE /* streamwebViewController.swift in Sources */,
 				BE0224221DC5309A00E2E4A8 /* cs707p1.xcdatamodeld in Sources */,
 				BE02241A1DC5309A00E2E4A8 /* AppDelegate.swift in Sources */,
 				BE3205881DF0CFC300D8D8EE /* tab1ViewController.swift in Sources */,
