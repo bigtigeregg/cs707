@@ -11,7 +11,8 @@ import Alamofire
 
 class streamwebViewController: UIViewController {
 
-    @IBAction func takePhotoButton(_ sender: Any) {
+    @IBOutlet weak var photobutton: UIButton!
+        @IBAction func takePhotoButton(_ sender: Any) {
         Alamofire.request("http://halo37.wings.cs.wisc.edu:8011/snap", method: .get).responseJSON { response in
             print(response.request)  // original URL request
             print(response.response) // HTTP URL response
@@ -28,6 +29,11 @@ class streamwebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        photobutton.layer.cornerRadius = 5
+        photobutton.layer.borderWidth = 1
+        
+        
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     

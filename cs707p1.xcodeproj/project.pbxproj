@@ -13,6 +13,10 @@
 		BE0224221DC5309A00E2E4A8 /* cs707p1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE0224201DC5309A00E2E4A8 /* cs707p1.xcdatamodeld */; };
 		BE0224241DC5309B00E2E4A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0224231DC5309B00E2E4A8 /* Assets.xcassets */; };
 		BE0224271DC5309B00E2E4A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0224251DC5309B00E2E4A8 /* LaunchScreen.storyboard */; };
+		BE2A9F511DFBC6FD007B136F /* ic_camera_enhance_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2A9F501DFBC6FD007B136F /* ic_camera_enhance_48pt.png */; };
+		BE2A9F5B1DFBC98C007B136F /* android-image.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2A9F581DFBC98C007B136F /* android-image.png */; };
+		BE2A9F5C1DFBC98C007B136F /* ic_theaters_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2A9F591DFBC98C007B136F /* ic_theaters_48pt.png */; };
+		BE2A9F5D1DFBC98C007B136F /* ic_home_48pt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2A9F5A1DFBC98C007B136F /* ic_home_48pt.png */; };
 		BE3205881DF0CFC300D8D8EE /* tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3205871DF0CFC300D8D8EE /* tab1ViewController.swift */; };
 		BE32058A1DF0D14C00D8D8EE /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3205891DF0D14C00D8D8EE /* WebViewController.swift */; };
 		BE32058C1DF0D9BB00D8D8EE /* streamwebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32058B1DF0D9BB00D8D8EE /* streamwebViewController.swift */; };
@@ -28,6 +32,10 @@
 		BE0224231DC5309B00E2E4A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE0224261DC5309B00E2E4A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0224281DC5309B00E2E4A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2A9F501DFBC6FD007B136F /* ic_camera_enhance_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_camera_enhance_48pt.png; sourceTree = "<group>"; };
+		BE2A9F581DFBC98C007B136F /* android-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "android-image.png"; sourceTree = "<group>"; };
+		BE2A9F591DFBC98C007B136F /* ic_theaters_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_theaters_48pt.png; sourceTree = "<group>"; };
+		BE2A9F5A1DFBC98C007B136F /* ic_home_48pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home_48pt.png; sourceTree = "<group>"; };
 		BE3205871DF0CFC300D8D8EE /* tab1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tab1ViewController.swift; sourceTree = "<group>"; };
 		BE3205891DF0D14C00D8D8EE /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BE32058B1DF0D9BB00D8D8EE /* streamwebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = streamwebViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +92,10 @@
 		BE0224181DC5309A00E2E4A8 /* cs707p1 */ = {
 			isa = PBXGroup;
 			children = (
+				BE2A9F581DFBC98C007B136F /* android-image.png */,
+				BE2A9F591DFBC98C007B136F /* ic_theaters_48pt.png */,
+				BE2A9F5A1DFBC98C007B136F /* ic_home_48pt.png */,
+				BE2A9F501DFBC6FD007B136F /* ic_camera_enhance_48pt.png */,
 				BE0224191DC5309A00E2E4A8 /* AppDelegate.swift */,
 				BE02241D1DC5309A00E2E4A8 /* Main.storyboard */,
 				BE3205891DF0D14C00D8D8EE /* WebViewController.swift */,
@@ -162,6 +174,10 @@
 				BE0224271DC5309B00E2E4A8 /* LaunchScreen.storyboard in Resources */,
 				BE0224241DC5309B00E2E4A8 /* Assets.xcassets in Resources */,
 				BE02241F1DC5309A00E2E4A8 /* Main.storyboard in Resources */,
+				BE2A9F5C1DFBC98C007B136F /* ic_theaters_48pt.png in Resources */,
+				BE2A9F511DFBC6FD007B136F /* ic_camera_enhance_48pt.png in Resources */,
+				BE2A9F5B1DFBC98C007B136F /* android-image.png in Resources */,
+				BE2A9F5D1DFBC98C007B136F /* ic_home_48pt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
