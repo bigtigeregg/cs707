@@ -63,14 +63,17 @@
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="407"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </webView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udt-ll-otB">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udt-ll-otB">
                                         <rect key="frame" x="30" y="413" width="244" height="70"/>
                                         <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="Take photo"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="LTN-VW-4kO"/>
                                         </constraints>
-                                        <state key="normal" title="Take photo" image="ic_camera_enhance_48pt.png"/>
+                                        <state key="normal" title="Take photo" image="ic_camera_enhance_48pt.png">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.78686040639877319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="1" blue="0.78686040639877319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="takePhotoButton:" destination="NyL-Z2-Zfb" eventType="touchUpInside" id="Lfx-qh-yI5"/>
                                         </connections>
@@ -131,7 +134,7 @@
                                         <rect key="frame" x="0.0" y="126" width="260" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Switch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdi-Z2-2TP">
-                                                <rect key="frame" x="0.0" y="0.0" width="211" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="211" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
