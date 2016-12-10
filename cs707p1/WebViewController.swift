@@ -13,11 +13,13 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-  
-        
-        myWebView.loadRequest(URLRequest(url: URL(string: "http://halo37.wings.cs.wisc.edu:5000/app-dist/#/photos")!))
-   
+      
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        myWebView.loadRequest(URLRequest(url: URL(string: "http://halo37.wings.cs.wisc.edu:5000/app-dist/#/photos")!))
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

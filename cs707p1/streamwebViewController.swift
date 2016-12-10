@@ -12,7 +12,7 @@ import Alamofire
 class streamwebViewController: UIViewController {
 
     @IBAction func takePhotoButton(_ sender: Any) {
-        Alamofire.request("http://halo37.wings.cs.wisc.edu:8011/login", method: .get).responseJSON { response in
+        Alamofire.request("http://halo37.wings.cs.wisc.edu:8011/snap", method: .get).responseJSON { response in
             print(response.request)  // original URL request
             print(response.response) // HTTP URL response
             print(response.data )     // server data
@@ -25,12 +25,14 @@ class streamwebViewController: UIViewController {
     }
     
     @IBOutlet weak var streamWebView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        streamWebView.loadRequest(URLRequest(url: URL(string: "http://halo37.wings.cs.wisc.edu:5000/app-dist/#/live-stream")!))
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        streamWebView.loadRequest(URLRequest(url: URL(string: "http://halo37.wings.cs.wisc.edu:81/video.cgi")!))
     }
 
     
