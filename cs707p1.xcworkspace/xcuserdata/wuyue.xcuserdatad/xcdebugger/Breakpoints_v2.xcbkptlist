@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cs707p1/streamwebViewController.swift"
+            timestampString = "502997939.770463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cs707p1.streamwebViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; cs707p1.streamwebViewController"
+                  moduleName = "cs707p1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wuyue/Documents/cs707/cs707p1/streamwebViewController.swift"
+                  timestampString = "502998132.170748"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cs707p1.streamwebViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; cs707p1.streamwebViewController"
+                  moduleName = "cs707p1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wuyue/Documents/cs707/cs707p1/streamwebViewController.swift"
+                  timestampString = "502998132.172882"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cs707p1.streamwebViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;cs707p1.streamwebViewController&gt;"
+                  moduleName = "cs707p1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wuyue/Documents/cs707/cs707p1/streamwebViewController.swift"
+                  timestampString = "502998132.175247"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "cs707p1.streamwebViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;cs707p1.streamwebViewController&gt;"
+                  moduleName = "cs707p1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wuyue/Documents/cs707/cs707p1/streamwebViewController.swift"
+                  timestampString = "502998132.177514"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

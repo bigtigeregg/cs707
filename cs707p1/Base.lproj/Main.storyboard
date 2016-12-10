@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Photos -->
         <scene sceneID="h1A-wr-NvA">
             <objects>
                 <viewController id="fLm-uE-pEI" customClass="WebViewController" customModule="cs707p1" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                             <constraint firstItem="abL-Sc-db8" firstAttribute="top" secondItem="VU8-cf-F4b" secondAttribute="bottom" constant="8" symbolic="YES" id="Ygz-dN-W7r"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="FlZ-eh-Zed"/>
+                    <tabBarItem key="tabBarItem" title="Photos " id="FlZ-eh-Zed" userLabel="photo album"/>
                     <connections>
                         <outlet property="myWebView" destination="VU8-cf-F4b" id="D7K-A8-Txe"/>
                     </connections>
@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="1252" y="263.11844077961024"/>
         </scene>
-        <!--Item-->
+        <!--stream-->
         <scene sceneID="S4E-nW-mYF">
             <objects>
                 <viewController id="NyL-Z2-Zfb" customClass="streamwebViewController" customModule="cs707p1" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,10 +56,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thE-6m-B28">
-                                <rect key="frame" x="16" y="28" width="343" height="582"/>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thE-6m-B28">
+                                <rect key="frame" x="16" y="28" width="343" height="432"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udt-ll-otB">
+                                <rect key="frame" x="137" y="556" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.78686040639877319" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Take photo"/>
+                                <state key="normal" title="Take photo"/>
+                                <connections>
+                                    <action selector="takePhotoButton:" destination="NyL-Z2-Zfb" eventType="touchUpInside" id="Lfx-qh-yI5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -69,7 +79,7 @@
                             <constraint firstItem="thE-6m-B28" firstAttribute="trailing" secondItem="VLU-MT-7pC" secondAttribute="trailingMargin" id="ZI5-JQ-Ose"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="byk-JM-bbb"/>
+                    <tabBarItem key="tabBarItem" title="stream" id="byk-JM-bbb"/>
                     <connections>
                         <outlet property="streamWebView" destination="thE-6m-B28" id="8Nl-Lo-Fmx"/>
                     </connections>
@@ -78,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="781.60000000000002" y="937.78110944527748"/>
         </scene>
-        <!--Item 1-->
+        <!--home-->
         <scene sceneID="D4v-jO-IVb">
             <objects>
                 <viewController id="al9-Nq-VyP" customClass="tab1ViewController" customModule="cs707p1" customModuleProvider="target" sceneMemberID="viewController">
@@ -130,7 +140,7 @@
                             <constraint firstItem="sdi-Z2-2TP" firstAttribute="leading" secondItem="7d5-xt-SQh" secondAttribute="leading" id="uxW-Bf-O1Y"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="e9v-BW-xsX"/>
+                    <tabBarItem key="tabBarItem" title="home" id="e9v-BW-xsX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hA-fd-5sY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

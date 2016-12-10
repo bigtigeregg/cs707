@@ -7,9 +7,23 @@
 //
 
 import UIKit
+import Alamofire
 
 class streamwebViewController: UIViewController {
 
+    @IBAction func takePhotoButton(_ sender: Any) {
+        Alamofire.request("http://halo37.wings.cs.wisc.edu:8011/login", method: .get).responseJSON { response in
+            print(response.request)  // original URL request
+            print(response.response) // HTTP URL response
+            print(response.data )     // server data
+            print(response.result)   // result of response serialization
+            
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+            }
+        }
+    }
+    
     @IBOutlet weak var streamWebView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +33,7 @@ class streamwebViewController: UIViewController {
         
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
