@@ -65,7 +65,7 @@ class homeViewController: UIViewController,  UIPopoverPresentationControllerDele
             "g": g,
             "b": b
         ]
-         Alamofire.request("http://127.0.0.1:8011/login", method: .post, parameters: parameters, encoding: URLEncoding.default)
+         Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
     }
     
 
@@ -77,7 +77,7 @@ class homeViewController: UIViewController,  UIPopoverPresentationControllerDele
             "feature": "brightness",
             "value": value
         ]
-        Alamofire.request("http://127.0.0.1:8011/login", method: .post, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
     }
 
 
@@ -99,7 +99,7 @@ class homeViewController: UIViewController,  UIPopoverPresentationControllerDele
                 "feature": "power",
                 "value": 0
             ]
-            Alamofire.request("http://127.0.0.1:8011/login", method: .post, parameters: parameters, encoding: URLEncoding.default)
+            Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
             
         }
     }
