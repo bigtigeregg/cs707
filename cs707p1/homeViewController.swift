@@ -12,13 +12,13 @@ import Alamofire
 class homeViewController: UIViewController,  UIPopoverPresentationControllerDelegate {
     
     @IBOutlet weak var slider: UISlider!
+    
     @IBOutlet weak var lightSwitch: UISwitch!
     
     @IBOutlet var button: UIButton!
     
     // Generate popover on button press
     @IBAction func colorPickerButton(_ sender: UIButton) {
-        
         let popoverVC = storyboard?.instantiateViewController(withIdentifier: "colorPickerPopover") as! ColorPickerViewController
         popoverVC.modalPresentationStyle = .popover
         popoverVC.preferredContentSize = CGSize(width: 284, height: 446)
@@ -38,51 +38,69 @@ class homeViewController: UIViewController,  UIPopoverPresentationControllerDele
         return .none
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        slider.isContinuous = false
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
     func setButtonColor (_ color: UIColor) {
         button.setTitleColor(color, for:UIControlState())
+        let component = color.cgColor
+        let ncomponent = component.components
+        let r = (ncomponent?[0])! * 255
+        let g = (ncomponent?[1])! * 255
+        let b = (ncomponent?[2])! * 255
+        let parameters: Parameters = [
+            "feature": "color",
+            "r": r,
+            "g": g,
+            "b": b
+        ]
+         Alamofire.request("http://127.0.0.1:8011/login", method: .post, parameters: parameters, encoding: URLEncoding.default)
     }
     
-    @IBAction func brightnessSlider(_ sender: Any) {
-        print(slider.value)
+
+    @IBAction func editchange(_ sender: Any) {
+        
+        let value = Int(slider.value * 100)
+        print(value)
+        let parameters: Parameters = [
+            "feature": "brightness",
+            "value": value
+        ]
+        Alamofire.request("http://127.0.0.1:8011/login", method: .post, parameters: parameters, encoding: URLEncoding.default)
     }
+
 
     @IBAction func lightEnabler(_ sender: Any) {
         if(lightSwitch.isOn){
             print("Turn On Light")
-            Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/led/on", method: .get).responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // HTTP URL response
-                print(response.data )     // server data
-                print(response.result)   // result of response serialization
-                
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
-                }
-            }
+            
+            let parameters: Parameters = [
+                "feature": "power",
+                "value": 1
+            ]
+            
+            Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
         }
         else{
             print("Turn Off Light")
-            Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/led/off", method: .get).responseJSON { response in
-                print(response.request)  // original URL request
-                print(response.response) // HTTP URL response
-                print(response.data )     // server data
-                print(response.result)   // result of response serialization
-                
-                if let JSON = response.result.value {
-                    print("JSON: \(JSON)")
-                }
-            }
+            
+            let parameters: Parameters = [
+                "feature": "power",
+                "value": 0
+            ]
+            Alamofire.request("http://127.0.0.1:8011/login", method: .post, parameters: parameters, encoding: URLEncoding.default)
+            
         }
     }
-    
 }
