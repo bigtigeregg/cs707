@@ -13,7 +13,7 @@ class streamwebViewController: UIViewController {
 
     @IBOutlet weak var photobutton: UIButton!
         @IBAction func takePhotoButton(_ sender: Any) {
-        Alamofire.request("http://halo37.wings.cs.wisc.edu:8011/snap", method: .get).responseJSON { response in
+        Alamofire.request("http://128.105.22.51:8011/snap", method: .get).responseJSON { response in
             print(response.request)  // original URL request
             print(response.response) // HTTP URL response
             print(response.data )     // server data
@@ -38,7 +38,7 @@ class streamwebViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        streamWebView.loadRequest(URLRequest(url: URL(string: "http://halo37.wings.cs.wisc.edu:81/video.cgi")!))
+        streamWebView.loadRequest(URLRequest(url: URL(string: "http://128.105.22.51:81/video.cgi")!))
     }
 
     

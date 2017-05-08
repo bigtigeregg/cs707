@@ -153,6 +153,7 @@
 				TargetAttributes = {
 					BE0224151DC5309900E2E4A8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VEGEYN8UR5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -374,6 +375,7 @@
 			baseConfigurationReference = 4B35EDA6C8575753A186D27C /* Pods-cs707p1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VEGEYN8UR5;
 				INFOPLIST_FILE = cs707p1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs707.cs707p1;
@@ -387,6 +389,7 @@
 			baseConfigurationReference = 0E26216998EB9313E210C99C /* Pods-cs707p1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VEGEYN8UR5;
 				INFOPLIST_FILE = cs707p1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cs707.cs707p1;

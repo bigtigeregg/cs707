@@ -17,7 +17,7 @@ class WebViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        myWebView.loadRequest(URLRequest(url: URL(string: "http://halo37.wings.cs.wisc.edu:5000/app-dist/#/photos")!))
+        myWebView.loadRequest(URLRequest(url: URL(string: "http://128.105.22.51:5000/app-dist/#/photos")!))
     }
     
     override func didReceiveMemoryWarning() {

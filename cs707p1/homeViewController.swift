@@ -65,7 +65,7 @@ class homeViewController: UIViewController,  UIPopoverPresentationControllerDele
             "g": g,
             "b": b
         ]
-         Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
+         Alamofire.request("http://128.105.22.51:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
     }
     
 
@@ -77,7 +77,7 @@ class homeViewController: UIViewController,  UIPopoverPresentationControllerDele
             "feature": "brightness",
             "value": value
         ]
-        Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request("http://128.105.22.51:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
     }
 
 
@@ -90,7 +90,7 @@ class homeViewController: UIViewController,  UIPopoverPresentationControllerDele
                 "value": 1
             ]
             
-            Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
+            Alamofire.request("http://128.105.22.51:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
         }
         else{
             print("Turn Off Light")
@@ -99,7 +99,7 @@ class homeViewController: UIViewController,  UIPopoverPresentationControllerDele
                 "feature": "power",
                 "value": 0
             ]
-            Alamofire.request("http://halo37.wings.cs.wisc.edu:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
+            Alamofire.request("http://128.105.22.51:8012/json", method: .post, parameters: parameters, encoding: URLEncoding.default)
             
         }
     }
